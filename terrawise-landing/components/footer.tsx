@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Twitter, Linkedin, Instagram, Youtube } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ContactFormModal } from "@/components/ContactFormModal"
 
 export default function Footer() {
   const productLinks = [
@@ -51,7 +52,7 @@ export default function Footer() {
 
           {/* Column 2: Products */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Products</h3>
+            {/* <h3 className="text-white font-semibold text-lg mb-4">Products</h3>
             <ul className="space-y-3">
               {productLinks.map((link) => (
                 <li key={link.name}>
@@ -60,12 +61,12 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </div>
 
           {/* Column 3: Resources */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Resources</h3>
+            {/* <h3 className="text-white font-semibold text-lg mb-4">Resources</h3>
             <ul className="space-y-3">
               {resourceLinks.map((link) => (
                 <li key={link.name}>
@@ -74,7 +75,7 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </div>
 
           {/* Column 4: Social & Contact */}
@@ -92,7 +93,13 @@ export default function Footer() {
                 </Link>
               ))}
             </div>
-            <Button className="rounded-button bg-primary hover:bg-primary-hover text-white w-full">Contact Us</Button>
+            <ContactFormModal
+              trigger={
+                <Button className="rounded-button bg-white hover:bg-gray-100 text-black w-full">
+                  Get in Touch
+                </Button>
+              }
+            />
           </div>
         </div>
 

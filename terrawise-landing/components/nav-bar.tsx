@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { useMobile } from "@/hooks/use-mobile"
+import { ContactFormModal } from "@/components/ContactFormModal"
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false)
@@ -96,10 +97,13 @@ export default function NavBar() {
               </nav>
             )}
 
-            {/* Button with consistent styling - light black background with white text */}
-            <Button className="rounded-button bg-charcoal/90 hover:bg-charcoal text-white text-sm font-semibold px-5 border-0">
-              Get In Touch
-            </Button>
+            <ContactFormModal
+              trigger={
+                <Button className="rounded-button bg-charcoal/90 hover:bg-charcoal text-white text-sm font-semibold px-5 border-0">
+                  Get In Touch
+                </Button>
+              }
+            />
 
             {isMobile && (
               <button
@@ -115,19 +119,21 @@ export default function NavBar() {
       </header>
 
       {/* Mobile menu */}
-      {isMobile && mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-white pt-nav-mobile">
-          <div className="container py-6 flex flex-col space-y-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-xl font-semibold text-charcoal py-2 border-b border-border"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {link.name}
-              </Link>
-            ))}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 top-[72px] z-40 bg-white md:hidden">
+          <div className="container max-w-content-lg py-4">
+            <nav className="flex flex-col space-y-4">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="text-base font-semibold text-charcoal"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </nav>
           </div>
         </div>
       )}

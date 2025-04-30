@@ -12,13 +12,12 @@ export default function FeatureSectionA() {
               Your teammate in the field.
             </h2>
             <p className="text-lg text-text-secondary max-w-[420px] mb-8">
-              Terrawise rovers are autonomously navigate entiresolar farms, performing AI-powered inspections with precision and care.
-              Our rovers capture high-res RGB and thermal imagery, GPS, and system health data in real time.  
+              Terrawise rovers are autonomously navigate entire solar farms, performing inspections with precision and care.
               Anomalies, from cracks to hotspots, are surfaced early and automatically so you can act before issues grow.
             </p>
-            <Button className="rounded-button bg-charcoal/90 hover:bg-charcoal text-white text-sm font-semibold px-5 border-0">
+            {/* <Button className="rounded-button bg-charcoal/90 hover:bg-charcoal text-white text-sm font-semibold px-5 border-0">
               Learn more
-            </Button>
+            </Button> */}
           </div>
 
           {/* Robot image - clean presentation without background circle or shadow */}
@@ -26,7 +25,7 @@ export default function FeatureSectionA() {
             <div className="relative w-full max-w-[500px] aspect-square">
               {/* Robot image */}
               <div className="relative w-full h-full p-8">
-                <Image src="/images/helios-robot.png" alt="Helios Robot" fill className="object-contain" />
+                <Image src="/images/rover.png" alt="Helios Robot" fill className="object-contain" />
               </div>
             </div>
           </div>
