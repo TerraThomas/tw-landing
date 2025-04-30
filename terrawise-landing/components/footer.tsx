@@ -95,8 +95,8 @@ export default function Footer() {
             </div>
             <ContactFormModal
               trigger={
-                <Button className="rounded-button bg-white hover:bg-gray-100 text-black w-full">
-                  Get in Touch
+                <Button className="rounded-button bg-primary hover:bg-primary-hover text-white w-full">
+                  Contact Us
                 </Button>
               }
             />

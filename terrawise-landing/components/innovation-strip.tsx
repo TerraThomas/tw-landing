@@ -28,13 +28,13 @@ export default function InnovationStrip() {
             Our R&D team combines cutting-edge AI with robust hardware to create robots that can navigate the
             challenging terrain of solar farms with ease.
           </p>
-          <Button
+          {/* <Button
             onClick={() => setVideoOpen(true)}
             className="inline-flex items-center gap-2 px-6 py-3 bg-white text-charcoal font-semibold rounded-button hover:bg-white/90 transition-colors"
           >
             <Play className="h-5 w-5" />
             See Helios in action
-          </Button>
+          </Button> */}
         </div>
       </div>
 
