@@ -14,7 +14,7 @@ export default function Home() {
       <FeatureSectionA />
       <FeatureSectionB />
       <InnovationStrip />
-      {/* <SolutionsGrid /> */}
+      <SolutionsGrid />
       <Footer />
     </main>
   )

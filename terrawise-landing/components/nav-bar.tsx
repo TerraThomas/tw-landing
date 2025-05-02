@@ -51,7 +51,7 @@ export default function NavBar() {
               <div className="relative w-36 h-10">
                 {/* Original logo (white text) for transparent navbar */}
                 <Image
-                  src="/images/terrawise-logo.png"
+                  src="/images/terrawise-logo-white.png"
                   alt="Terrawise Logo"
                   fill
                   className={cn(

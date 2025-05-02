@@ -20,11 +20,11 @@ export default function Footer() {
   ]
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Youtube, href: "#", label: "YouTube" },
+    // { icon: Facebook, href: "#", label: "Facebook" },
+    // { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/terra-wise-solar/", label: "LinkedIn" },
+    // { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Youtube, href: "https://www.youtube.com/channel/UCcJitolctF-yzs1QE_kKrag", label: "YouTube" },
   ]
 
   return (
@@ -34,16 +34,15 @@ export default function Footer() {
           {/* Column 1: Logo and mission */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="relative w-10 h-10">
+              <div className="relative w-40 h-12">
                 <Image
-                  src="/placeholder.svg?height=40&width=40"
+                  src="/images/terrawise-logo-white.png"
                   alt="Terrawise Logo"
-                  width={40}
-                  height={40}
+                  fill
                   className="object-contain"
                 />
               </div>
-              <span className="text-lg font-semibold text-white">Terrawise</span>
+              {/* <span className="text-lg font-semibold text-white">Terrawise</span> */}
             </Link>
             <p className="mb-6">
               Revolutionizing solar farm maintenance with autonomous robotics and AI-powered solutions.

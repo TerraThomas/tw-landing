@@ -10,30 +10,23 @@ import { cn } from "@/lib/utils"
 const solutions = [
   {
     id: 1,
-    title: "Panel Inspection",
-    description: "Thermal and visual inspection to detect hotspots, cracks, and soiling issues.",
-    image: "/placeholder.svg?height=180&width=320",
+    title: "Advanced ML pipeline",
+    description: " Inference models accurately detect faults.",
+    image: "/images/infared-1.png?height=180&width=320",
     link: "#",
   },
   {
     id: 2,
-    title: "Digital Twin",
-    description: "Create a digital replica of your solar farm for predictive maintenance and optimization.",
+    title: "Remote teleoperation",
+    description: "Livestream video or manually drive robot remotely for targeted inspections.",
     image: "/placeholder.svg?height=180&width=320",
     link: "#",
   },
   {
     id: 3,
-    title: "Autonomous Cleaning",
-    description: "Waterless cleaning system that removes dust and debris without scratching panels.",
-    image: "/placeholder.svg?height=180&width=320",
-    link: "#",
-  },
-  {
-    id: 4,
-    title: "Performance Analytics",
-    description: "AI-powered analytics to maximize energy yield and extend panel lifespan.",
-    image: "/placeholder.svg?height=180&width=320",
+    title: "Software integrations",
+    description: "Direct integrations into your current SaaS solutions and drone platforms.",
+    image: "/images/integrations.png?height=180&width=320",
     link: "#",
   },
 ]
@@ -68,7 +61,7 @@ export default function SolutionsGrid() {
             "grid gap-6 pb-4",
             isMobile
               ? "grid-flow-col auto-cols-[320px] overflow-x-auto snap-x snap-mandatory scrollbar-hide"
-              : "md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
+              : "md:grid-cols-2 lg:grid-cols-3",
           )}
         >
           {solutions.map((solution) => (

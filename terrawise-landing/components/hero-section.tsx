@@ -11,7 +11,7 @@ export default function HeroSection() {
         {/* Hero background image */}
         <div className="relative w-full h-full">
           <Image
-            src="/images/solar-hero-new.png"
+            src="/images/solar-hero-old.png"
             alt="Solar farm with robot at sunset"
             fill
             priority
@@ -24,12 +24,11 @@ export default function HeroSection() {
       <div className="container relative z-10 max-w-content-lg">
         <div className="md:max-w-[540px] text-center md:text-left px-4 md:px-0 py-16 md:py-0">
           <h1 className="text-[clamp(2.5rem,4vw,4.5rem)] font-bold text-white leading-tight mb-6">
-            <span className="whitespace-nowrap">AI-Powered Robots</span><br />
+            <span className="whitespace-nowrap">AI-Powered Platform</span><br />
             <span className="whitespace-nowrap">Revolutionizing Solar</span>
           </h1>
           <p className="text-2xl font-normal text-text-light max-w-[540px]">
-            Autonomous robots that revolutionize solar panel maintenance, inspection, and cleaning for maximum energy
-            efficiency.
+            Autonomous AI Agents for Operations & Maintenance in utility-scale solar plants
           </p>
         </div>
       </div>
