@@ -106,7 +106,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p>© {new Date().getFullYear()} Terrawise Robotics. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="#" className="hover:text-white">
+              {/* <Link href="#" className="hover:text-white">
                 Privacy Policy
               </Link>
               <Link href="#" className="hover:text-white">
@@ -114,7 +114,7 @@ export default function Footer() {
               </Link>
               <Link href="#" className="hover:text-white">
                 Sitemap
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
