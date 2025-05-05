@@ -31,7 +31,7 @@ export default function FeatureSectionB() {
                 src="/images/platform.png"
                 alt="Solar Maintenance Automation"
                 fill
-                className="object-cover rounded-lg shadow-md"
+                className="object-cover rounded-lg"
               />
             </div>
           </div>
