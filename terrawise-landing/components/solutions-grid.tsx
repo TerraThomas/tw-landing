@@ -16,19 +16,20 @@ const solutions = [
     link: "#",
   },
   {
-    id: 2,
-    title: "Remote teleoperation",
-    description: "Livestream video or manually drive robot remotely for targeted inspections.",
-    image: "/placeholder.svg?height=180&width=320",
-    link: "#",
-  },
-  {
     id: 3,
     title: "Software integrations",
     description: "Direct integrations into your current SaaS solutions and drone platforms.",
     image: "/images/integrations.png?height=180&width=320",
     link: "#",
   },
+  {
+    id: 2,
+    title: "Remote teleoperation",
+    description: "Livestream video or manually drive robot remotely for targeted inspections.",
+    image: "/images/drive.png?height=180&width=320",
+    link: "#",
+  },
+
 ]
 
 export default function SolutionsGrid() {

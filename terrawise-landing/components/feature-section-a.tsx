@@ -19,11 +19,9 @@ export default function FeatureSectionA() {
           {/* Text content - 55% on desktop */}
           <div className="md:pl-8">
             <h2 className="text-[clamp(2rem,5vw,3rem)] font-bold text-charcoal mb-6">
-              Your teammate in the field.
-            </h2>
+            Your Personalized O&M Assistant            </h2>
             <p className="text-lg text-text-secondary max-w-[420px] mb-8">
-              Terrawise rovers are autonomously navigate entire solar farms, performing inspections with precision and care.
-              Anomalies, from cracks to hotspots, are surfaced early and automatically so you can act before issues grow.
+            TerraWise Rovers autonomously learn and navigate your entire solar farm, performing inspections with precision and care. From cracks to connectors, anomalies are detected early and automatically—so you can maximize energy output. When needed, operators can take remotely operate the robot from anywhere in the world for targeted, on-demand inspections. 
             </p>
             {/* <Button className="rounded-button bg-charcoal/90 hover:bg-charcoal text-white text-sm font-semibold px-5 border-0">
               Learn more
