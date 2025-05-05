@@ -28,7 +28,7 @@ export default function FeatureSectionB() {
             <div className="relative w-full aspect-video">
               <Image
                 // src="/placeholder.svg?height=400&width=600"
-                src="/images/data-placeholder.jpg"
+                src="/images/platform.png"
                 alt="Solar Maintenance Automation"
                 fill
                 className="object-cover rounded-lg shadow-md"
